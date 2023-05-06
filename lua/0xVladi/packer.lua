@@ -14,6 +14,8 @@ return require('packer').startup(function(use)
   }
 
   use({ 'tomasiser/vim-code-dark' })
+  use { "catppuccin/nvim", as = "catppuccin" }
+
   use({ 'lukas-reineke/indent-blankline.nvim' })
   use({ 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' } })
   use({ 'theprimeagen/harpoon' })
