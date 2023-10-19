@@ -8,7 +8,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   use {
-	'nvim-telescope/telescope.nvim', tag = '0.1.1',
+	'nvim-telescope/telescope.nvim', tag = '0.1.4',
 	-- or                            , branch = '0.1.x',
 	requires = { {'nvim-lua/plenary.nvim'} }
   }
@@ -16,14 +16,17 @@ return require('packer').startup(function(use)
   use({ 'tomasiser/vim-code-dark' })
   use { "catppuccin/nvim", as = "catppuccin" }
 
-  use({ 'lukas-reineke/indent-blankline.nvim' })
-  use({ 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' } })
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    commit = 'v0.8.3',
+    run = ':TSUpdate'
+  }
+
   use({ 'theprimeagen/harpoon' })
   use({ 'mbbill/undotree' })
 
   use({ 'prettier/vim-prettier', { run = 'npm install' } })
   use({ 'github/copilot.vim' })
-  use({ 'airblade/vim-gitgutter' })
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
