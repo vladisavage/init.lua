@@ -22,7 +22,6 @@ vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
-vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
@@ -31,3 +30,8 @@ vim.opt.mouse = 'v'
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
 vim.opt.ignorecase = true
+
+-- Go File definitions for files that are missing an extension
+vim.opt.suffixesadd:append({".js", ".vue"})
+vim.opt.isfname:append("@-@")
+vim.opt.includeexpr = "substitute(substitute(v:fname, '^\\~/', 'cypress/', ''), '^@\\/', 'src/', '')"
