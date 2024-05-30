@@ -20,6 +20,12 @@ lsp.configure('lua-language-server', {
     }
 })
 
+vim.filetype.add({
+    extension = {
+        mq5 = "cpp",
+        mq4 = "cpp",
+    }
+})
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}

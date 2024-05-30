@@ -28,6 +28,9 @@ return require('packer').startup(function(use)
   use({ 'prettier/vim-prettier', { run = 'npm install' } })
   use({ 'github/copilot.vim' })
 
+  -- mql5 syntax highlighting
+  use ({ 'rupurt/vim-mql5' })
+
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v1.x',
