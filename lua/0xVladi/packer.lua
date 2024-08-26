@@ -14,22 +14,10 @@ return require('packer').startup(function(use)
   }
 
   use({ 'tomasiser/vim-code-dark' })
-  use { "catppuccin/nvim", as = "catppuccin" }
+  use({ "rose-pine/neovim", name = "rose-pine" })
+  use({ "folke/tokyonight.nvim", name = "tokyonight" })
 
-  use {
-    'nvim-treesitter/nvim-treesitter',
-    commit = 'v0.8.3',
-    run = ':TSUpdate'
-  }
-
-  use({ 'theprimeagen/harpoon' })
-  use({ 'mbbill/undotree' })
-
-  use({ 'prettier/vim-prettier', { run = 'npm install' } })
-  use({ 'github/copilot.vim' })
-
-  -- mql5 syntax highlighting
-  use ({ 'rupurt/vim-mql5' })
+  use { 'nvim-treesitter/nvim-treesitter' }
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -53,5 +41,16 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'}, -- Optional
 	  }
   }
+
+  use({ 'theprimeagen/harpoon' })
+  use({ 'mbbill/undotree' })
+
+  use({ 'prettier/vim-prettier', { run = 'npm install' }, name = 'vim-prettier' })
+  use({ 'github/copilot.vim' })
+  use({ 'rhysd/git-messenger.vim' })
+
+  use 'sindrets/diffview.nvim'
+  use 'nvim-tree/nvim-web-devicons'
+
 end)
 

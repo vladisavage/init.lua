@@ -1,14 +1,14 @@
-require('catppuccin').setup({
-    disable_background = true
+require("tokyonight").setup({
+    style = "night",  -- Ensure you're using the 'night' style
+    on_colors = function(colors)
+        colors.bg = "#171717"  -- Replace with your preferred darker color
+    end,
+    on_highlights = function(hl, c)
+        hl.Normal = { bg = c.bg }
+        hl.NormalFloat = { bg = c.bg }
+    end,
 })
 
-function ColorMyPencils(color) 
-	color = color or "catppuccin"
-	vim.cmd.colorscheme(color)
+-- Apply the theme
+vim.cmd[[colorscheme tokyonight]]
 
-	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-
-end
-
-ColorMyPencils()

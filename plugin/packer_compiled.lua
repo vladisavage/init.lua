@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/vlad/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/vlad/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/vlad/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/vlad/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/vlad/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/Users/vlad/.cache/nvim/packer_hererocks/2.1.1716656478/share/lua/5.1/?.lua;/Users/vlad/.cache/nvim/packer_hererocks/2.1.1716656478/share/lua/5.1/?/init.lua;/Users/vlad/.cache/nvim/packer_hererocks/2.1.1716656478/lib/luarocks/rocks-5.1/?.lua;/Users/vlad/.cache/nvim/packer_hererocks/2.1.1716656478/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/vlad/.cache/nvim/packer_hererocks/2.1.1716656478/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -78,11 +78,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/vlad/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
-  },
-  catppuccin = {
-    loaded = true,
-    path = "/Users/vlad/.local/share/nvim/site/pack/packer/start/catppuccin",
-    url = "https://github.com/catppuccin/nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
@@ -114,10 +109,20 @@ _G.packer_plugins = {
     path = "/Users/vlad/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
+  ["diffview.nvim"] = {
+    loaded = true,
+    path = "/Users/vlad/.local/share/nvim/site/pack/packer/start/diffview.nvim",
+    url = "https://github.com/sindrets/diffview.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/vlad/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
+  },
+  ["git-messenger.vim"] = {
+    loaded = true,
+    path = "/Users/vlad/.local/share/nvim/site/pack/packer/start/git-messenger.vim",
+    url = "https://github.com/rhysd/git-messenger.vim"
   },
   harpoon = {
     loaded = true,
@@ -139,6 +144,11 @@ _G.packer_plugins = {
     path = "/Users/vlad/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  neovim = {
+    loaded = true,
+    path = "/Users/vlad/.local/share/nvim/site/pack/packer/start/neovim",
+    url = "https://github.com/rose-pine/neovim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/vlad/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -153,6 +163,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/vlad/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/Users/vlad/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -169,6 +184,11 @@ _G.packer_plugins = {
     path = "/Users/vlad/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/Users/vlad/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
+  },
   undotree = {
     loaded = true,
     path = "/Users/vlad/.local/share/nvim/site/pack/packer/start/undotree",
@@ -178,11 +198,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/vlad/.local/share/nvim/site/pack/packer/start/vim-code-dark",
     url = "https://github.com/tomasiser/vim-code-dark"
-  },
-  ["vim-mql5"] = {
-    loaded = true,
-    path = "/Users/vlad/.local/share/nvim/site/pack/packer/start/vim-mql5",
-    url = "https://github.com/rupurt/vim-mql5"
   },
   ["vim-prettier"] = {
     loaded = true,
