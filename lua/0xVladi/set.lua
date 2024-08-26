@@ -25,7 +25,7 @@ vim.opt.signcolumn = "yes"
 
 vim.opt.updatetime = 50
 
-vim.opt.mouse = 'v'
+vim.opt.mouse = 'a'
 
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
